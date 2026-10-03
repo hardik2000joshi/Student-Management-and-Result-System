@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <h2>Student Managemnt System(SMS)</h2>
+
+        <ul class="active">
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="students.html">Students</a></li>
+            <li><a href="attendance.html">Attendance</a></li>
+            <li><a href="marks.html">Marks</a></li>
+            <li><a href="results.html">Results</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main">
+
+        <!-- Header -->
+        <header class="header">
+            <h1>Student Management & Result System</h1>
+
+            <div class="date">
+                <span id="currentDate"></span>
+            </div>
+        </header>
+
+        <!-- Dashboard Cards -->
+        <section class="cards">
+
+            <div class="card">
+                <h3>Total Students</h3>
+                <h2 id="totalStudents">0</h2>
+            </div>
+
+            <div class="card">
+                <h3>Present Today</h3>
+                <h2 id="presentStudents">0</h2>
+            </div>
+
+            <div class="card">
+                <h3>Passed Students</h3>
+                <h2 id="passedStudents">0</h2>
+            </div>
+
+            <div class="card">
+                <h3>Average Percentage</h3>
+                <h2 id="averageMarks">0%</h2>
+            </div>
+
+        </section>
+
+        <!-- Recent Students -->
+        <section class="table-section">
+
+            <h2>Recent Students</h2>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Roll No</th>
+                        <th>Name</th>
+                        <th>Course</th>
+                        <th>Semester</th>
+                    </tr>
+                </thead>
+
+                <tbody id="studentTable">
+
+                    <!-- Data comes from JavaScript -->
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
